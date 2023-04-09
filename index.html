@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1013d8b8e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logog-removebg-preview.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>I am a Frontend Web Developer</p>
+                    <h1>Hi! my name is <br><span>S M Ghulam Ghaus Faiyaz</span>, 
+                        <br>from Kolkata, West Bengal.</h1>
+                </div>
+                <!-- <div class="header-image">
+                    <img src="image/my_pic_circle.png" alt="">
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+    <!------about-----> 
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/my_pic_circle.png" alt="">
+                </div>    
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lacus vel pulvinar 
+                        iaculis. Cras non diam semper, pharetra velit ullamcorper, facilisis velit. Etiam vel volutpat
+                         lacus. Nulla scelerisque tincidunt erat, vitae porta nibh tincidunt in. Pellentesque luctus 
+                         sapien a est pharetra congue. Praesent lobortis augue vel nisi tempus, eu pulvinar dui semper.
+                         Suspendisse tellus odio, consectetur quis justo at, maximus posuere diam.</p>
+                    <div class="tab-title">
+                        <p class="title-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="title-links" onclick="opentab('skills')">Skills</p>
+                        <p class="title-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="title-contents active-contents" id="education">
+                        <ul>
+                            <li><span>Masters</span><br>ICFAI Business School, Kolkata Marketing Management-7.79cgpa</li>
+                            <li><span>Bachelors</span><br>Maulana Abul Kalam Azad University of Technoology-7.72cgpa</li>
+                            <li><span>School</span><br>St. Paul's Mission School ISC-70%</li>
+                            <li><span>School</span><br>St. Paul's Mission School ICSE-71%</li>
+                        </ul>
+                    </div>
+                    <div class="title-contents" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>Python: Intermediate</li>
+                            <li><span>Web Development</span><br>HTML : Beginner <br>CSS : Beginner 
+                                <br>JavaScript : Beginner <br>Bootstrap : Beginner</li>
+                            <li><span>Web Scrapping</span><br>Using Beautiful Soup and Selenium Webdriver</li>
+                        </ul>
+                    </div>
+                    <div class="title-contents" id="experience">
+                        <ul>
+                            <li><span>SimpliLearn</span><br><strong>From 25 January 2022 - 11 July 2022</strong><br>
+                            Worked as an Inside Sales Manager.</li>
+                            <li><span>Edukyu</span><br><strong>From 25 July 2022 - Present</strong><br>
+                                Worked as a Manager Career Development.</li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- -----------service----------- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lacus vel pulvinar 
+                        iaculis. Cras non diam semper, pharetra velit ullamcorper, facilisis velit.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Career Counselling</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lacus vel pulvinar 
+                        iaculis. Cras non diam semper, pharetra velit ullamcorper, facilisis velit.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lacus vel pulvinar 
+                        iaculis. Cras non diam semper, pharetra velit ullamcorper, facilisis velit.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------project--------------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://www.coolmathgames.com/sites/default/files/Snake%20OG%20Image.png" alt="snake-game-image">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>Old snake game built with python and tkinter. Where you move the snake 
+                        the four direction keys on our keyboard. And the speed of snake keeps on 
+                        increasing  as the score increases.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://www.imaginarycloud.com/blog/content/images/2019/02/Pong.jpg" alt="Pong-game-image">
+                    <div class="layer">
+                        <h3>Pong Game</h3>
+                        <p>Very first video game build using python and tkinter.
+                            Where you up and down keyboard arrows to hit the
+                            balls</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Flash_Card_img.png" alt="FlashCard-image">
+                    <div class="layer">
+                        <h3>Flash Card</h3>
+                        <p>A guessing game built using python and tkinter where the users
+                            gues the English meaning of the given french word. For
+                            every wrong guess the word will be stored in a
+                            separate file to let the user know where to focus.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#header" class="btn">See more</a>
+                
+        </div>
+    </div>
+    <!-- ----------contact me------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>smghulam.ghausfaiyaz19@gmail.com</p>
+                    
+                    <p><i class="fa-solid fa-phone"></i>+91 9007045010</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/s-m-ghulam-ghaus-faiyaz/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Cv/Resume_SMFaiyaz.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <label for="name" class="label">Name:</label>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <label for="name" class="label">Email:</label>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <label for="name" class="label">Message:</label>
+                        <textarea name="Message" id="" cols="" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">    
+            <p>Copyright belongs to <i class="fa-solid fa-copyright"></i> <span>S M Ghulam Ghaus Faiyaz</span> Personal Website.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
